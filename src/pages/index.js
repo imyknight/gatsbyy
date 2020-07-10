@@ -1,18 +1,20 @@
 import React from "react"
 // import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import '../styles/index/section1.scss'
+import Header from '../components/header'
+import Section1 from '../components/index/section1'
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
-
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
-  </Layout>
+    <div>
+      <section className="section1">
+        <Header />
+        <Section1 />
+      </section>
+    </div>
+  </div>
 )
 
 export default IndexPage
