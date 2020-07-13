@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from './logo'
+import Logo from './img/logo'
 import '../styles/header.scss'
 import '../styles/styles.scss'
 
