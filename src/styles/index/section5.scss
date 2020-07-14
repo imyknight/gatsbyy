@@ -1,29 +1,16 @@
-.section4{
+.section5{
+  background-image: url(../../images/bg-features.jpg);
+  background-size: cover;
   padding-top: 110px;
-  padding-bottom: 110px;
   .left{
     width: 100%;
     max-width: 50%;
-    position: relative;
-    text-align: center;
-    .img-fluid{
-      width: auto;
-      max-width: 300px;
-      height: auto;
-    }
-    .icon{
-      position: absolute;
-      top: 10%;
-      right: 15%;
-    }
-  }
-  .right{
-    width: 100%;
-    max-width: 50%;
+    min-height: 680px;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: center;
     .mg-15{
       margin-top: 15%;
     }
@@ -50,6 +37,27 @@
      font-weight: 500;
      margin-top: 0px;
      text-align: left;
+    }
+  }
+  .right{
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .img-fluid{
+      display: inline-block;
+      width: auto;
+      max-width: 300px;
+      height: auto;
+      max-height: 550px;
+      margin-top: 19%;
+    }
+    .icon{
+      margin-top: 19%;
+      position: absolute;
+      top: 10%;
+      right: 15%;
     }
   }
 }
