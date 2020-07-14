@@ -3,6 +3,14 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -13,4 +21,9 @@
   .c2{
     flex-grow: 5;
   }
+}
+
+body{
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
 }

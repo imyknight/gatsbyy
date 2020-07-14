@@ -5,7 +5,7 @@ import Fluid from '../img/Fluid'
 
 const Section1 = ({ data }) => {
   return (
-    <div className="container flex-row">
+    <div className="container flex-row content">
       <div className="c1">
         <div className="introduce">
           {data}
@@ -26,9 +26,6 @@ const Section1 = ({ data }) => {
         <div className="img-fluid">
           <Fluid />
         </div>
-      </div>
-      <div className="list-logo">
-        
       </div>
     </div>
   )
