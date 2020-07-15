@@ -1,0 +1,32 @@
+.section10{
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .title{
+    text-align: center;
+    h1{
+      font-size: 56px;
+      color: #343434;
+      line-height: 45px;
+      margin-bottom: 35px;
+      margin-top: 0;
+    }
+    p{
+      font-size: 24px;
+      margin-bottom: 48px;
+      color: #555556;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  }
+  .list-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .btn{
+      width: 100%;
+      max-width: 210px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

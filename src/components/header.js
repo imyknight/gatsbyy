@@ -9,21 +9,23 @@ const itemNav = ['Home', 'Features', 'Pricing', 'News', 'Contact']
   .map((item, index) => <div className="item" key={index}>{item}</div>)
 
 const Header = () => (
-  <nav className="container">
-    <div className="box-logo">
-      <div className="logo">
-        <Logo />
+  <div>
+    <nav className="container">
+      <div className="box-logo">
+        <div className="logo">
+          <Logo />
+        </div>
       </div>
-    </div>
-    <div className="list-btn">
-      <div className="list-nav-item">
-        {itemNav}
+      <div className="list-btn">
+        <div className="list-nav-item">
+          {itemNav}
+        </div>
+        <div className="btn-start-free-trial">
+          Start free trial
+        </div>
       </div>
-      <div className="btn-start-free-trial">
-        Start free trial
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 )
 
 Header.propTypes = {

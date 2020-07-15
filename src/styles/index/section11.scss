@@ -1,0 +1,39 @@
+.section11{
+  .bg{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    overflow: hidden;
+    img{
+      display: block;
+    }
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 163px;
+    padding-bottom: 40px;
+    .left{
+      width: 100%;
+      max-width: 137px;
+    }
+    .right{
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .content2{
+    padding-top: 55px;
+    padding-bottom: 15px;
+    border-top: 2px solid white;
+    p{
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -4,4 +4,13 @@
   justify-content: space-between;
   padding-bottom: 110px;
   padding-top: 100px;
+  animation: fade 1s;
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }

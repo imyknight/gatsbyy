@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-nav{
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  display: flex;
-  flex-direction: row;
-  .box-logo{
-    flex-grow: 1;
-    .logo{
-      height: 47px;
-      width: 137px;
-    }
-  }
-  .list-btn{
+.header{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  nav{
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     display: flex;
     flex-direction: row;
-    flex-grow: 2;
-    align-items: center;
-    justify-content: space-between;
-    .list-nav-item{
+    .box-logo{
+      flex-grow: 1;
+      .logo{
+        height: 47px;
+        width: 137px;
+      }
+    }
+    .list-btn{
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      .item{
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-top: 35px;
-        margin-bottom: 35px;
-        font-size: 18px;
-        color: #ffffff;
+      flex-grow: 2;
+      align-items: center;
+      justify-content: space-between;
+      .list-nav-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .item{
+          margin-right: 20px;
+          margin-left: 20px;
+          margin-top: 35px;
+          margin-bottom: 35px;
+          font-size: 18px;
+          color: #ffffff;
+        }
       }
     }
   }
