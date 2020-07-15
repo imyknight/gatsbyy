@@ -8,6 +8,9 @@ import '../styles/index/section3.scss'
 import '../styles/index/section4.scss'
 import '../styles/index/section5.scss'
 import '../styles/index/section6.scss'
+import '../styles/index/section7.scss'
+import '../styles/index/section8.scss'
+import '../styles/index/section9.scss'
 import Header from '../components/header'
 import Section1 from '../components/index/section1'
 import Section2 from '../components/index/section2'
@@ -15,10 +18,12 @@ import Section3 from '../components/index/section3'
 import Section4 from "../components/index/section4"
 import Section5 from "../components/index/section5"
 import Section6 from '../components/index/section6'
+import Section7 from '../components/index/section7'
+import Section8 from '../components/index/section8'
+import Section9 from '../components/index/section9'
 
 
 const IndexPage = ({ data }) => {
-  console.log(data.site.siteMetadata.introduceIndex)
   return (
     <div>
       <SEO title="Home" />
@@ -41,6 +46,15 @@ const IndexPage = ({ data }) => {
         </section>
         <section className="section6">
           <Section6 />
+        </section>
+        <section className="section7">
+          <Section7 />
+        </section>
+        <section className="section8">
+          <Section8 />
+        </section>
+        <section>
+          <Section9 />
         </section>
       </div>
     </div>

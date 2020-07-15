@@ -1,3 +1,111 @@
 .section7{
-  
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .title{
+    text-align: center;
+    h6{
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      color: #4d81de;
+      font-weight: normal;
+      line-height: 1.3;
+      margin-top: 0
+    }
+    h2{
+      font-size: 36px;
+      color: #343434;
+      line-height: 43px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+  }
+  .list-item{
+    display: flex;
+    flex-direction: row;
+    .item{
+      flex-grow: 3;
+      max-width: 33.33333%;
+      display: flex;
+      flex-direction: column;
+      .label{
+        font-size: 14px;
+        color: #ffffff;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      .head{
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 26px;
+        color: #343434;
+        padding-top: 50px;
+        padding-bottom: 27px;
+      }
+      ul{
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        li{
+          font-size: 16px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          list-style-type: none;
+          color: #555556;
+          max-width: 290px;
+          margin-left: auto;
+          margin-right: auto;
+        }:nth-child(odd){
+          background-color: #f5fafc;;
+        }
+      }
+      .price{
+        font-size: 60px;
+        margin-bottom: 20px;
+        color: #4d81de;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        .currency{
+          font-weight: 400;
+          line-height: 1.5;
+          font-size: 35px;
+          position: relative;
+          top: 5px;
+        }
+        .duration{
+          font-size: 20px;
+          color: #555556;
+          display: flex;
+          align-items: flex-end;
+          position: relative;
+          bottom: 15px;
+        }
+      }
+      .btn-footer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+    }:nth-child(2){
+      .label{
+        background-color: #628bea;
+      }
+    }
+    .item:hover{
+      box-shadow: 0 0 50px -22px #bfbfbf;
+      position: relative;
+      z-index: 999;
+      .label{
+        background-color: #628bea;
+      }
+    }
+  }
 }
