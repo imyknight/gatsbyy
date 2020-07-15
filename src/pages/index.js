@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
         <section className="section8">
           <Section8 />
         </section>
-        <section>
+        <section className="section9">
           <Section9 />
         </section>
       </div>
