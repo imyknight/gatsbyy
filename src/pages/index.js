@@ -25,7 +25,6 @@ import Section9 from '../components/index/section9'
 import Section10 from '../components/index/section10'
 import Section11 from '../components/index/section11'
 
-
 const IndexPage = ({ data }) => {
   return (
     <div>
