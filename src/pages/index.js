@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 import '../styles/index/section1.scss'
@@ -83,4 +82,4 @@ export const data = graphql`
 }
 `
 
-export default IndexPage
+export default IndexPage;
