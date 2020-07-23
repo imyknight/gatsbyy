@@ -37,9 +37,7 @@ const Header = () => (
           <div className="text">
             Start free trial
           </div>
-          <div  className="decor">
-            
-          </div>
+          <div className="decor" />
         </div>
       </div>
     </nav>

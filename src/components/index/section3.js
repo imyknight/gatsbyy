@@ -3,13 +3,9 @@ import '../../styles/index/section2.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/swiper.scss';
-// import 'swiper/components/navigation/navigation.scss';
-// import 'swiper/components/pagination/pagination.scss';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-
-// const data = [
 //   {
 //     link: require('../../images/img-icon2.png'),
 //     header: 'Free Caliing Service',
@@ -32,73 +28,83 @@ import 'swiper/swiper.scss';
 
 const Section3 = () => {
   return (
-    <div className="container row parent">
-      <div className="left">
-        <h6>CHECKOUT FEATURES</h6>
-        <h2>The only app you will need</h2>
-        <div className="icon-box">
-          <FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} />
-          <FontAwesomeIcon className="icon" icon={faLongArrowAltRight} />
+    <CarouselProvider
+      naturalSlideWidth={100}
+      naturalSlideHeight={125}
+      totalSlides={6}
+      visibleSlides={3}
+    >
+      <div className="content">
+        <div className="left">
+          <h6>CHECKOUT FEATURES</h6>
+          <h2>The only app you will need</h2>
+          <div className="icon-box">
+            <ButtonBack  ><FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} /></ButtonBack>
+            <ButtonNext><FontAwesomeIcon className="icon" icon={faLongArrowAltRight} /></ButtonNext>
+          </div>
+        </div>
+        <div className="right">
+          <div className="wrap-slide">
+            <Slider>
+              <Slide index={0}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                  </p>
+                </div>
+              </Slide>
+              <Slide index={1}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                </p>
+                </div>
+              </Slide>
+              <Slide index={2}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                </p>
+                </div>
+              </Slide>
+              <Slide index={3}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                </p>
+                </div>
+              </Slide>
+              <Slide index={4}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                </p>
+                </div>
+              </Slide>
+              <Slide index={5}>
+                <div className="slide">
+                  <img alt="slide" src={require('../../images/img-icon1.png')} />
+                  <h3>Free Caliing Service</h3>
+                  <p>
+                    'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
+                </p>
+                </div>
+              </Slide>
+            </Slider>
+          </div>
         </div>
       </div>
-      <div className="right">
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: false }}
-          scrollbar={{ draggable: false }}
-          onSwiper={( swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
-        >
-          <SwiperSlide>
-            <div className="slide">
-              <img alt="slide" src={require('../../images/img-icon1.png')} />
-              <h3>Free Caliing Service</h3>
-              <p>
-                'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img alt="slide" src={require('../../images/img-icon2.png')} />
-              <h3>Free Caliing Service</h3>
-              <p>
-                'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
-              </p>
-            </div>
-          </SwiperSlide>  
-          <SwiperSlide>
-            <div className="slide">
-              <img alt="slide" src={require('../../images/img-icon3.png')} />
-              <h3>Free Caliing Service</h3>
-              <p>
-                'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
-              </p>
-            </div>
-          </SwiperSlide>  
-          <SwiperSlide>
-            <div className="slide">
-              <img alt="slide" src={require('../../images/img-icon3.png')} />
-              <h3>Free Caliing Service</h3>
-              <p>
-                'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
-              </p>
-            </div>
-          </SwiperSlide>  
-          <SwiperSlide>
-            <div className="slide">
-              <img alt="slide" src={require('../../images/img-icon2.png')} />
-              <h3>Free Caliing Service</h3>
-              <p>
-                'Direct mailing research development buyer iPad validation startup social proof learning curve user experience analytics'
-              </p>
-            </div>
-          </SwiperSlide>  
-        </Swiper>
-      </div>
-    </div>
+    </CarouselProvider>
   )
 }
 
