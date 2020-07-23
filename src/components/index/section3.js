@@ -39,8 +39,8 @@ const Section3 = () => {
           <h6>CHECKOUT FEATURES</h6>
           <h2>The only app you will need</h2>
           <div className="icon-box">
-            <ButtonBack  ><FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} /></ButtonBack>
-            <ButtonNext><FontAwesomeIcon className="icon" icon={faLongArrowAltRight} /></ButtonNext>
+            <ButtonBack className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} /></ButtonBack>
+            <ButtonNext className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltRight} /></ButtonNext>
           </div>
         </div>
         <div className="right">

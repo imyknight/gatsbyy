@@ -36,6 +36,13 @@
         font-weight: 500;
         margin-top: 0px;
       }
+      .btn{
+        background-color: white;
+        border: none;
+      }
+      .btn:focus{
+        outline: none;
+      }
       .icon {
         font-size: 30px;
         color: #4d81de;
