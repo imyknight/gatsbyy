@@ -1,10 +1,10 @@
-import React from './node_modules/react'
+import React from 'react'
 //font awesome
-import './node_modules/@fortawesome/fontawesome-svg-core'
-import { faStar } from './node_modules/@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from './node_modules/@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //style
 import './Section8.scss'
+
 const data = {
   content: `
   As part of the classes I teach, I task my students with preparing a lot 
