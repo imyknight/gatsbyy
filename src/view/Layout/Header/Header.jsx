@@ -1,6 +1,6 @@
 import React from 'react'
 //img
-import Logo from './logo'
+import Logo from '../../../components/image/logo'
 //style
 import './Header.scss'
 

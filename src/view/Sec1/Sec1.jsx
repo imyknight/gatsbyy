@@ -1,8 +1,8 @@
 import React from 'react'
 //img
-import LogoChplay from './logo-appstore'
-import LogoAppstore from './logo-appstore'
-import Fluid from './Fluid'
+import LogoChplay from './img/logo-appstore'
+import LogoAppstore from './img/logo-appstore'
+import Fluid from './img/Fluid'
 //style
 import './Sec1.scss'
 
@@ -13,7 +13,7 @@ const Section1 = ({ props }) => {
       <div className="container flex-row content">
         <div className="c1">
           <div className="introduce">
-            bb
+            {props.introduceIndex}
           </div>
           <div className="detail">
             Purchase our premium quality complete landing page template.
