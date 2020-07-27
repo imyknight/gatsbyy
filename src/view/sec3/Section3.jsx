@@ -6,7 +6,7 @@ import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 //style
-import './section3.scss'
+import './Section3.scss'
 
 const data = [
   { link: require('../../images/img-icon1.png') },

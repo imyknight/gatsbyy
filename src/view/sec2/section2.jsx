@@ -1,6 +1,6 @@
 import React from 'react'
 //style
-import './section2.scss'
+import './Section2.scss'
 
 const Section2 = () => {
   return (
