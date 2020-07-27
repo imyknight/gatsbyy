@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
+import useTrackTargetVisibility from '../../helpers/useTrackTargetVisibility';
 import '../../styles/index/section4.scss'
 
 const data = {
@@ -7,33 +8,14 @@ const data = {
    lorem ipsum is simply free text in the`
 }
 
-const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.2
-}
-
 function Section4() {
-  const imgFluid = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries, observer) => {
-      console.group('Intersection')
-      for (const entry of entries) {
-        console.log('observe entry ...', entry.isIntersecting)
-      }
-      console.groupEnd()
-    }, observerOptions);
-
-    observer.observe(imgFluid.current)
-
-    return () => observer.unobserve(imgFluid.current)
-  }, [])
+  const { isVisible, targetRef } = useTrackTargetVisibility();
 
   return (
     <div className="container row" >
       <div className="left">
-        <img className="img-fluid" name="1" ref={imgFluid} alt="fluid" src={require('../../images/img-fluid.png')} />
+        <img className={"img-fluid" + isVisible === true ? "fade-right" : ""} name="1" ref={targetRef} alt="fluid" src={require('../../images/img-fluid.png')} />
         <img className="icon" alt="icon" src={require('../../images/img-circleicon1.png')} />
       </div>
       <div className="right">
@@ -51,3 +33,4 @@ function Section4() {
 }
 
 export default Section4;
+

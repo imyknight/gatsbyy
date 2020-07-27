@@ -1,40 +1,48 @@
-.section4{
+.section4 {
   padding-top: 110px;
   padding-bottom: 110px;
-  .left{
+  .left {
     width: 100%;
     max-width: 50%;
     position: relative;
     text-align: center;
-    .img-fluid{
+    .img-fluid {
       width: auto;
       max-width: 300px;
       height: auto;
+      position: relative;
+      left: 0px;
     }
-    .icon{
+    .icon {
       position: absolute;
       top: 10%;
       right: 15%;
     }
+    .fade-right {
+      animation: fadeInRight 1s;
+    }
+    .fade-Up {
+      animation: fadeInUp 1s;
+    }
   }
-  .right{
+  .right {
     width: 100%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
-    .mg-15{
+    .mg-15 {
       margin-top: 15%;
     }
-    h6{
+    h6 {
       font-size: 14px;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: 5px;
-      color: #4d81de;;
+      color: #4d81de;
     }
-    h2{
+    h2 {
       font-size: 36px;
       color: #343434;
       line-height: 43px;
@@ -42,14 +50,35 @@
       margin-top: 0px;
       font-weight: 550;
     }
-    p{
-     font-size: 18px;
-     color: #555556; 
-     line-height: 37px;
-     margin-bottom: 25px;
-     font-weight: 500;
-     margin-top: 0px;
-     text-align: left;
+    p {
+      font-size: 18px;
+      color: #555556;
+      line-height: 37px;
+      margin-bottom: 25px;
+      font-weight: 500;
+      margin-top: 0px;
+      text-align: left;
     }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: 30%;
+  }
+  to {
+    opacity: 1;
+    top: 10%;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    left: -30%;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
   }
 }
