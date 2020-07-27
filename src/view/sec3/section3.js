@@ -1,11 +1,12 @@
 import React from 'react'
-import '../../styles/index/section2.scss'
+//icon font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
-
+//carousel slide
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+//style
+import './section3.scss'
 
 const data = [
   { link: require('../../images/img-icon1.png') },
@@ -25,31 +26,33 @@ const data = [
 
 const Section3 = () => {
   return (
-    <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={125}
-      totalSlides={8}
-      visibleSlides={3}
-    >
-      <div className="content">
-        <div className="left">
-          <h6>CHECKOUT FEATURES</h6>
-          <h2>The only app you will need</h2>
-          <div className="icon-box">
-            <ButtonBack className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} /></ButtonBack>
-            <ButtonNext className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltRight} /></ButtonNext>
+    <section className="section3">
+      <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={125}
+        totalSlides={8}
+        visibleSlides={3}
+      >
+        <div className="content">
+          <div className="left">
+            <h6>CHECKOUT FEATURES</h6>
+            <h2>The only app you will need</h2>
+            <div className="icon-box">
+              <ButtonBack className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltLeft} /></ButtonBack>
+              <ButtonNext className="btn"><FontAwesomeIcon className="icon" icon={faLongArrowAltRight} /></ButtonNext>
+            </div>
+          </div>
+          <div className="right">
+            <div className="wrap-slide">
+              <Slider>
+                {data}
+                {data}
+              </Slider>
+            </div>
           </div>
         </div>
-        <div className="right">
-          <div className="wrap-slide">
-            <Slider>
-              {data}
-              {data}
-            </Slider>
-          </div>
-        </div>
-      </div>
-    </CarouselProvider>
+      </CarouselProvider>
+    </section>
   )
 }
 
