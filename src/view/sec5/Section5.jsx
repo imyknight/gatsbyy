@@ -1,4 +1,4 @@
-import React from 'react'
+import React from './node_modules/react'
 //style
 import './Section5.scss'
 

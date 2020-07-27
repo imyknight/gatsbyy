@@ -1,10 +1,10 @@
-import React from 'react'
+import React from './node_modules/react'
 //icon font awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from './node_modules/@fortawesome/react-fontawesome'
+import { faLongArrowAltRight, faLongArrowAltLeft } from './node_modules/@fortawesome/free-solid-svg-icons'
 //carousel slide
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from './node_modules/pure-react-carousel';
+import './node_modules/pure-react-carousel/dist/react-carousel.es.css';
 //style
 import './Section3.scss'
 

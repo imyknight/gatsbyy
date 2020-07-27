@@ -6,11 +6,14 @@ import '../styles/styles.scss'
 import SEO from "../components/seo"
 import Layout from "../view/Layout/Layout"
 import Section1 from "../view/sec1/sec1"
-import Section2 from '../view/sec2/Section2'
-import Section3 from '../view/sec3/Section3'
-import Section4 from '../view/sec4/Section4'
-import Section5 from '../view/sec5/Section5'
-import Section6 from '../view/sec6/Section6'
+import Section2 from '../view/Sec2/Section2'
+import Section3 from '../view/Sec3/Section3'
+import Section4 from '../view/Sec4/Section4'
+import Section5 from '../view/Sec5/Section5'
+import Section6 from '../view/Sec6/Section6'
+import Section7 from '../view/Sec7/Section7'
+import Section8 from '../view/Sec8/Section8'
+import Section9 from '../view/sec9/Section9'
 
 const IndexPage = ({ data }) => {
   return (
@@ -24,6 +27,9 @@ const IndexPage = ({ data }) => {
           <Section4 />
           <Section5 />
           <Section6 />
+          <Section7 />
+          <Section8 />
+          <Section9 />
         </Layout>
       </>
     </div>

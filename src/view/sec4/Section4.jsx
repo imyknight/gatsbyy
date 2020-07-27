@@ -1,4 +1,4 @@
-import React from 'react'
+import React from './node_modules/react'
 //hook
 import useTrackTargetVisibility from '../../helpers/useTrackTargetVisibility';
 //style

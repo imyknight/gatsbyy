@@ -1,7 +1,7 @@
 import React from 'react'
 //img
-import LogoChplay from './img/logo-appstore'
-import LogoAppstore from './img/logo-appstore'
+import LogoChplay from '../../components/image/logo-appstore'
+import LogoAppstore from '../../components/image/logo-appstore'
 import Fluid from './img/Fluid'
 //style
 import './Sec1.scss'
