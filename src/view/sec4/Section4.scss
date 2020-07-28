@@ -1,6 +1,7 @@
 .section4 {
   padding-top: 110px;
   padding-bottom: 110px;
+  overflow: hidden;
   .left {
     width: 100%;
     max-width: 50%;
@@ -12,28 +13,32 @@
       height: auto;
       position: relative;
       will-change: left ;
-      transition: left 0.8s;
+      transition-property: transform, opacity;
+      transition-duration: 1s,1s;
     }
     .img-fluid-visible {
-      left: 0px;
+      transform: none;
+      opacity: 1;
     }
     .img-fluid-hide{
-      left:-50%;
+      transform: translateX(-400px);
+      opacity: 0;
     }
     .icon {
       position: absolute;
       right: 15%;
       top: 10%;
       will-change: top;
-      transition: top 0.8s;
+      transition-property: transform , opacity;
+      transition-duration: 1s;
     }
     .icon-hide{
-      opacity: 1;
-      top: 30%;
+      transform: translateY(300px);
+      opacity: 0;
     }
     .icon-visible{
+      transform: none;
       opacity: 1;
-      top: 10%;
     }
   }
   .right {

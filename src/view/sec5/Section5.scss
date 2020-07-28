@@ -1,6 +1,8 @@
 .section5{
   background-image: url(../../images/bg-features.jpg);
   background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
   .left{
     width: 100%;
     max-width: 50%;
@@ -74,14 +76,16 @@
       top: 10%;
       right: 15%;
 
-      will-change: top;
-      transition: top 1s;
+      transition-property: transform, opacity;
+      transition-duration: 1s;
     }
     .icon-hide{
-      top: 30%
+      transform: translateY(300px);
+      opacity: 0;
     }
     .icon-visible{
-      top: 10%
+      transform: none;
+      opacity: 1;
     }
   }
 }
