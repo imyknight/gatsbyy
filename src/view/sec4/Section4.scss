@@ -11,15 +11,14 @@
       max-width: 300px;
       height: auto;
       position: relative;
-      
-      will-change: left;
+      will-change: left ;
       transition: left 0.8s;
     }
     .img-fluid-visible {
       left: 0px;
     }
     .img-fluid-hide{
-      left:-30%;
+      left:-50%;
     }
     .icon {
       position: absolute;

@@ -11,7 +11,7 @@ const data = {
 function Section5() {
   const { isVisible, targetRef } = useTrackTargetVisibility();
   return (
-    <section className="section5">
+    <section className="section5" ref={targetRef}>
       <div className="container row">
         <div className="left">
           <div>
@@ -20,20 +20,19 @@ function Section5() {
             <p>{data.content}</p>
             <div className="btn-start-free-trial">
               get started now
-        </div>
+            </div>
           </div>
         </div>
         <div className="right">
-          <img 
-            className={isVisible?"img-fluid img-fluid-visible":"img-fluid img-fluid-hide"}
-            alt="fluid" 
-            src={require('../../images/img-fluid.png')} 
+          <img
+            className={isVisible ? "img-fluid img-fluid-visible" : "img-fluid img-fluid-hide"}
+            alt="fluid"
+            src={require('../../images/img-fluid.png')}
           />
-          <img 
-            className={isVisible?"icon icon-visible":"icon icon-hide"}
-            alt="icon" 
-            ref={targetRef} 
-            src={require('../../images/img-circleicon2.png')} 
+          <img
+            className={isVisible ? "icon icon-visible" : "icon icon-hide"}
+            alt="icon"
+            src={require('../../images/img-circleicon2.png')}
           />
         </div>
       </div>

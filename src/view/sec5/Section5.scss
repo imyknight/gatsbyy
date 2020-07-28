@@ -56,16 +56,17 @@
 
       margin-top: 19%;
       position: relative;
-      left: 0px;
 
       will-change: left;
-      transition: left 1s;
+      transition-property: transform, opacity;
+      transition-duration: 1s;
     }
     .img-fluid-hide{
-      left: -30%;
+      transform: translateX(400px);
+      transform: opacity 0;
     }
     .img-fluid-visible{
-      left: 0;
+      transform: none;
     }
     .icon{
       margin-top: 19%;

@@ -15,19 +15,18 @@ function Section4() {
   const { isVisible, targetRef } = useTrackTargetVisibility();
 
   return (
-    <section className="section4">
+    <section className="section4 " ref={targetRef} >
       <div className="container row" >
         <div className="left">
-          <img 
-            className={isVisible?"img-fluid img-fluid-visible fade-right":"img-fluid img-fluid-hide fadeOutLeft"} 
-            alt="fluid" 
-            src={require('../../images/img-fluid.png')} 
+          <img
+            className={isVisible ? "img-fluid img-fluid-visible fade-right" : "img-fluid img-fluid-hide fadeOutLeft"}
+            alt="fluid"
+            src={require('../../images/img-fluid.png')}
           />
-          <img 
-            className={isVisible?"icon icon-visible":"icon icon-hide"} 
-            ref={targetRef} 
-            alt="icon" 
-            src={require('../../images/img-circleicon1.png')} 
+          <img
+            className={isVisible ? "icon icon-visible" : "icon icon-hide"}
+            alt="icon"
+            src={require('../../images/img-circleicon1.png')}
           />
         </div>
         <div className="right">

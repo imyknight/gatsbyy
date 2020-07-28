@@ -4,7 +4,7 @@ export default function useTrackTargetVisibility() {
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 1
+    threshold: 0.1
   }
   const targetRef = useRef(null);
 
