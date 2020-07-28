@@ -1,7 +1,7 @@
 import React from 'react'
 //component
-import CHplay from '../../components/img/CHplay'
-import Appstore from '../../components/img/appstore'
+import LogoCHplay from '../../components/image/logo-chplay'
+import LogoAppstore from '../../components/image/logo-appstore'
 //style
 import './Section10.scss'
 
@@ -14,10 +14,10 @@ const Section10 = () => (
       </div>
       <div className="list-btn">
         <div className="btn">
-          <Appstore />
+          <LogoAppstore />
         </div>
         <div className="btn">
-          <CHplay />
+          <LogoCHplay />
         </div>
       </div>
     </div>

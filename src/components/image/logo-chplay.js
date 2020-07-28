@@ -17,4 +17,4 @@ const LogoCHplay = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default LogoChplay
+export default LogoCHplay
