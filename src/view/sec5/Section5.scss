@@ -41,22 +41,46 @@
   .right{
     width: 100%;
     max-width: 50%;
+
     display: flex;
     justify-content: center;
+
     position: relative;
     .img-fluid{
       display: inline-block;
+
       width: auto;
       max-width: 300px;
       height: auto;
       max-height: 550px;
+
       margin-top: 19%;
+      position: relative;
+      left: 0px;
+
+      will-change: left;
+      transition: left 1s;
+    }
+    .img-fluid-hide{
+      left: -30%;
+    }
+    .img-fluid-visible{
+      left: 0;
     }
     .icon{
       margin-top: 19%;
       position: absolute;
       top: 10%;
       right: 15%;
+
+      will-change: top;
+      transition: top 1s;
+    }
+    .icon-hide{
+      top: 30%
+    }
+    .icon-visible{
+      top: 10%
     }
   }
 }

@@ -4,10 +4,8 @@ export default function useTrackTargetVisibility() {
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.2
+    threshold: 1
   }
-
-
   const targetRef = useRef(null);
 
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +13,6 @@ export default function useTrackTargetVisibility() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
       for (const entry of entries) {
-        // console.log(entry.isIntersecting);
         setIsVisible(entry.isIntersecting);
         // console.log(displayAnimate);
       }
