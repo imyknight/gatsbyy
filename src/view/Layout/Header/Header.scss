@@ -4,11 +4,9 @@
   z-index: 999;
   width: 100%;
   nav {
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     display: flex;
     flex-direction: row;
+    align-items: center;
     .box-logo {
       flex-grow: 4;
       .logo {
@@ -27,10 +25,7 @@
         flex-direction: row;
         justify-content: flex-end;
         .item {
-          margin-right: 20px;
-          margin-left: 20px;
-          margin-top: 35px;
-          margin-bottom: 35px;
+          margin: 35px 20px 35px 20px;
           font-size: 18px;
           color: #ffffff;
           cursor: pointer;

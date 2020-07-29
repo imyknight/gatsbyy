@@ -1,10 +1,12 @@
-.section6{
+$coreColor: #628bea;
+
+.section6 {
   padding-top: 110px;
   padding-bottom: 110px;
-  position: relative;
-  .title{
+  .title {
     text-align: center;
-    h6{
+    margin-bottom: 40px;
+    h6 {
       font-size: 14px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -12,9 +14,9 @@
       margin-top: 0px;
       line-height: 1.3;
       text-align: center;
-      color: #4d81de;;
+      color: #4d81de;
     }
-    h2{
+    h2 {
       margin-top: 0px;
       font-size: 36px;
       color: #343434;
@@ -23,36 +25,57 @@
       font-weight: 500;
     }
   }
-  .screens{
-    display: flex;
-    justify-content: center;
-    .screen{
-      margin-right: 30px;
+  .app-screen {
+    overflow: hidden;
+    .carousel-parent {
       width: 100%;
-      max-width: 275px;
-      height: auto;
-      max-height: 600px;
+      .slide {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        .screen {
+          width: 100%;
+          max-width: 275px;
+        }
+      }
     }
   }
-  .owl-dots{
+  .owl-dots {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+
     margin-top: 15px;
-    .owl-dot{
-      background-color: gray;
+    margin-bottom: 5px;
+    .owl-dot {
+      background-color: #d6d6d6;
+      margin-left: 5px;
       width: 8px;
-      height: 8px;
-      margin: 3px;
-      border-radius: 30px;
+      height: 11px;
+
+      border-radius: 50%;
+      border: none;
       cursor: pointer;
-    }:hover{
-      background-color: #628bea;
+      will-change: transform, background-color;
+      transition: transform 0.2s, background-color 0.2s;
     }
-    .active{
-      background-color: #628bea;
+    .owl-dot:disabled {
+      background-color: $coreColor;
+    }
+    .owl-dot:hover {
+      background-color: $coreColor;
+      transform: scale(1.3);
+    }
+    .active {
+      background-color: $coreColor  ;
       width: 10px;
       height: 10px;
     }
   }
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.mr-30:nth-last-child(1) {
+  margin-right: 0px;
 }
