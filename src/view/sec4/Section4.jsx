@@ -36,7 +36,8 @@ function Section4() {
             <p>{data.content}</p>
             <div className="btn-start-free-trial">
               get started now
-        </div>
+              <div className="decor" />
+            </div>
           </div>
         </div>
       </div>

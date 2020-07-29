@@ -2,7 +2,7 @@ import React from 'react'
 //style
 import './Section6.scss'
 //carousel
-import { CarouselProvider, Slider, Slide, DotGroup, Dot} from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, Dot } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const data = ['slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide', 'slide']
@@ -39,7 +39,6 @@ const Section6 = () => (
               ))
             }
           </div>
-          
         </CarouselProvider>
       </div>
     </div>

@@ -20,6 +20,7 @@ function Section5() {
             <p>{data.content}</p>
             <div className="btn-start-free-trial">
               get started now
+              <div className="decor" />
             </div>
           </div>
         </div>

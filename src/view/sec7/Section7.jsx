@@ -11,7 +11,7 @@ const Section7 = () => (
       </div>
       <div className="list-item">
         <div className="item">
-          <div className="label">best picks</div>
+          <div className="label">regular</div>
           <div className="head">Startup Plan</div>
           <ul>
             <li>10 pages</li>
@@ -34,7 +34,8 @@ const Section7 = () => (
           <div className="btn-footer">
             <div className="btn-start-free-trial">
               Start free trial
-          </div>
+              <div className="decor" />
+            </div>
           </div>
         </div>
         <div className="item">
@@ -61,11 +62,12 @@ const Section7 = () => (
           <div className="btn-footer">
             <div className="btn-start-free-trial">
               Start free trial
+              <div className="decor" />
             </div>
           </div>
         </div>
         <div className="item">
-          <div className="label">best picks</div>
+          <div className="label">platinum</div>
           <div className="head">Startup Plan</div>
           <ul>
             <li>10 pages</li>
@@ -88,7 +90,8 @@ const Section7 = () => (
           <div className="btn-footer">
             <div className="btn-start-free-trial">
               Start free trial
-          </div>
+              <div className="decor" />
+            </div>
           </div>
         </div>
       </div>
