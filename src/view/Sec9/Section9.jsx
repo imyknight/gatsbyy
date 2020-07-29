@@ -17,4 +17,4 @@ const Section9 = () => (
   </section>
 )
 
-export default Section9;
+export default Section9
