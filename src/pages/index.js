@@ -5,7 +5,7 @@ import '../styles/styles.scss'
 //component
 import SEO from "../components/seo"
 import Layout from "../view/Layout/Layout"
-import Section1 from "../view/Sec1/sec1"
+import Section1 from "../view/Sec1/Sec1"
 import Section2 from '../view/Sec2/Section2'
 import Section3 from '../view/Sec3/Section3'
 import Section4 from '../view/Sec4/Section4'
