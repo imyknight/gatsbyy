@@ -40,12 +40,13 @@
   overflow: hidden;
 
   .decor {
+    display: inline-block;
     width: 200px;
     height: 100%;
     position: absolute;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.1);
     right: -150px;
+ 
+    background-color: rgba(255, 255, 255, 0.1);
     transform: skew(20deg, 0deg);
 
     will-change: right;
